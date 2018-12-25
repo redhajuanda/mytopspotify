@@ -1,0 +1,26 @@
+{
+  "name": "myspotify",
+  "version": "1.0.0",
+  "description": "First Node Project",
+  "main": "app.js",
+  "dependencies": {
+    "@types/dotenv": "^6.1.0",
+    "dotenv": "^6.2.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.0",
+    "mysql": "^2.16.0",
+    "node-fetch": "^2.3.0",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "redhajuanda",
+  "license": "ISC"
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <% include head %>
+  <style>
+    .wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper:after {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+.wrapper img {
+  width: auto;
+  height: 100%;
+  max-width: none;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+  </style>
+</head>
+<body>
+    <% include header %>
+      <% if(page == 'artists'){ %>
+      <% include artists %>
+      <% } 
+      else if(page == 'tracks'){ %>
+      <% include songs %>
+      <% } %>
+    <% include footer %>
+</body>
+</html>
